@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:uxuan_app/pages/main/view.dart';
 
+import 'common/routes.dart';
+
 void main() {
   runApp(MyApp());
+  //白色
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
 }
 
 class MyApp extends StatelessWidget {
@@ -15,7 +20,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(1080, 1920),
       builder: () => GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter_ScreenUtil',
+        title: '49优选',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           textTheme: TextTheme(button: TextStyle(fontSize: 45.sp)),
@@ -28,7 +33,8 @@ class MyApp extends StatelessWidget {
           );
         },
         home: MainPage(),
-        getPages: [],
+        defaultTransition: Transition.cupertino,
+        getPages: routes,
       ),
     );
   }

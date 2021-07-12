@@ -30,6 +30,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_screenutil: ^5.0.0+2
   get: ^4.1.4
+  flutter_swiper: ^1.1.6
+  flutter_native_splash: ^1.2.0
 
 dev_dependencies:
   flutter_test:

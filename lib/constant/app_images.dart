@@ -1,4 +1,4 @@
-class AppImages{
+class AppImages {
   static String nvbar_home_icon = 'static/images/d1-1.png';
   static String nvbar_home_icon_selected = 'static/images/d1-2.png';
   static String nvbar_cart_icon = 'static/images/d3-1.png';
@@ -6,4 +6,40 @@ class AppImages{
   static String nvbar_personal_icon = 'static/images/d4-1.png';
   static String nvbar_personal_icon_selected = 'static/images/d4-2.png';
   static String app_icon_msg = 'static/images/in06.png';
+  static String in_05 = 'static/images/in05.png';
+  static String banner1 = 'static/images/banner1.png';
+  static String banner2 = 'static/images/banner2.png';
+  static String banner3 = 'static/images/banner3.png';
+  static String banner4 = 'static/images/banner4.png';
+  static String in01 = 'static/images/in01.png';
+  static String in02 = 'static/images/in02.png';
+  static String in03 = 'static/images/in03.png';
+  static String in04 = 'static/images/in04.png';
+  static String ncpa = 'static/images/ncpa.png';
+  static String ncp = 'static/images/ncp.jpg';
+  static String c04 = 'static/images/c04.png';
+  static String gwc = 'static/images/gwc.png';
+  static String bg3 = 'static/images/bg3.jpg';
+  static String logo = 'static/images/logo.jpg';
+  static String xiugai = 'static/images/xiugai.png';
+  static String me05 = 'static/images/me05.png';
+  static String me03 = 'static/images/me03.png';
+  static String me06 = 'static/images/me06.png';
+  static String me04 = 'static/images/me04.png';
+  static String me02 = 'static/images/me02.png';
+  static String me01 = 'static/images/me01.png';
+  static String xtgg = 'static/images/xtgg-icon-1.png';
+  static String m11 = 'static/images/m11.png';
+  static String m07 = 'static/images/m07.png';
+  static String m09 = 'static/images/m09.png';
+  static String m13 = 'static/images/m13.png';
+  static String m06 = 'static/images/m06.png';
+  static String m01 = 'static/images/m01.png';
+  static String m14 = 'static/images/m14.png';
+  static String xq001 = 'static/images/xq-001.png';
+  static String xq002 = 'static/images/xq-002.png';
+  static String ping3 = 'static/images/ping3.png';
+  static String ping4 = 'static/images/ping4.png';
+  static String xq1 = 'static/images/xq1.png';
+  static String xq2 = 'static/images/xq2.png';
 }
