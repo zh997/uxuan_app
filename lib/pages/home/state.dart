@@ -3,10 +3,10 @@ import 'package:uxuan_app/constant/app_images.dart';
 
 class HomeState {
   RxList<SwiperItem> bannerList = [
-    SwiperItem(AppImages.banner1),
-    SwiperItem(AppImages.banner2),
-    SwiperItem(AppImages.banner3),
-    SwiperItem(AppImages.banner4),
+    SwiperItem('http://101.34.79.122:3000/images/banner1.png'),
+    SwiperItem('http://101.34.79.122:3000/images/banner2.png'),
+    SwiperItem('http://101.34.79.122:3000/images/banner3.png'),
+    SwiperItem('http://101.34.79.122:3000/images/banner4.png'),
   ].obs;
 
   HomeState() {
@@ -16,5 +16,5 @@ class HomeState {
 
 class SwiperItem {
   final String url;
-  SwiperItem(this.url);
+  const SwiperItem(this.url);
 }

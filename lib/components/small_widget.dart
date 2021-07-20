@@ -22,7 +22,7 @@ class Price extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.end,
-      mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.start,
+      mainAxisAlignment: mainAxisAlignment,
       children: [
         isShowUnit
             ? Padding(

@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:uxuan_app/constant/app_colors.dart';
 import 'package:uxuan_app/constant/app_fontsize.dart';
-import 'package:uxuan_app/constant/app_images.dart';
 import 'package:uxuan_app/constant/app_radius.dart';
+
+import 'cache_image.dart';
 
 class GoodsItem extends StatelessWidget {
   late GestureTapCallback onTap;
@@ -33,11 +34,9 @@ class GoodsItem extends StatelessWidget {
             Container(
               width: ScreenUtil().setWidth(421),
               height: ScreenUtil().setWidth(421),
-              child: Image.asset(
-                AppImages.c04,
-                fit: BoxFit.cover,
-              ),
+              child: CacheImage(url: 'https://nmmhbstl.com/uploads/images/background/20210719/79707971347ad3ba3632ef29b5c3c880.jpg'),
             ),
+            SizedBox(height: 5,),
             Expanded(
                 child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

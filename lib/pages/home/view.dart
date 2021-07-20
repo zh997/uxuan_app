@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:uxuan_app/common/routes.dart';
+import 'package:uxuan_app/components/cache_image.dart';
 import 'package:uxuan_app/components/goods_item.dart';
 import 'package:uxuan_app/constant/app_colors.dart';
 import 'package:uxuan_app/constant/app_fontsize.dart';
@@ -66,7 +67,7 @@ class _HomePageState extends State<HomePage>
                   Container(
                     alignment: Alignment.centerLeft,
                     padding: EdgeInsets.fromLTRB(
-                        AppSpace.space_45, 0, AppSpace.space_45, 0),
+                        AppSpace.space_45, AppSpace.space_20, AppSpace.space_45, 0),
                     child: Column(
                       children: [
                         Row(
@@ -131,7 +132,7 @@ class _HomePageState extends State<HomePage>
                                     Radius.circular(AppRadius.radius_100))),
                       )),
                       Container(
-                        padding: EdgeInsets.only(top: AppSpace.space_25),
+                        // padding: EdgeInsets.only(top: AppSpace.space_25),
                         child: Column(
                           children: [
                             _Swiper(bannerList),
@@ -158,10 +159,11 @@ class _HomePageState extends State<HomePage>
                       right: AppSpace.space_45,
                       bottom: AppSpace.space_45),
                   sliver: SliverGrid(
+                    key: UniqueKey(),
                     delegate: SliverChildBuilderDelegate(
                         (BuildContext context, int index) {
                       return GoodsItem(
-                        key: GlobalKey(),
+                        key: UniqueKey(),
                         onTap: () {
                           Get.toNamed(RouteConfig.goods_detail_page);
                         },
@@ -231,7 +233,7 @@ class _HomePageState extends State<HomePage>
       labelPadding: EdgeInsets.only(
           // right: AppSpace.space_45,
           top: AppSpace.space_45,
-          bottom: AppSpace.space_20,
+          bottom: AppSpace.space_45,
           left: AppSpace.space_45),
     );
   }
@@ -244,7 +246,7 @@ class _HomePageState extends State<HomePage>
       child: Swiper(
           key: UniqueKey(),
           index: 0,
-          duration: 1000,
+          duration: 500,
           itemCount: list.length,
           autoplay: true,
           pagination: SwiperPagination(builder: SwiperCustomPagination(builder:
@@ -276,7 +278,7 @@ class _HomePageState extends State<HomePage>
                     borderRadius: BorderRadius.all(
                         Radius.circular(ScreenUtil().setWidth(20)))),
                 clipBehavior: Clip.hardEdge,
-                child: Image.asset(list[index].url, fit: BoxFit.fill),
+                child: CacheImage(url: list[index].url),
               )),
     );
   }
